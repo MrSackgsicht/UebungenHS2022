@@ -1,11 +1,9 @@
 
 function changestyle() {
-    const sourceText = document.getElementById("input");
+    const sourceText = document.getElementById("input").value;
     const outputText = document.getElementById("output");
 
-    const textAsString = sourceText.value;
-
-    outputText.innerHTML = textAsString;
+    outputText.innerHTML = sourceText;
 
     var random = Math.floor(Math.random()*16777215).toString(16)
     var farbe = "#" + random;
