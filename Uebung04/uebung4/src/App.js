@@ -1,11 +1,11 @@
 import logo from './logo.svg';
-import "./App.css";
+import './App.css';
 import Timer from "./Timer";
 
 function App() {
   return (
     <div className="App">
-      <Timer countdown="50"/>
+      <Timer countdown="5"/>
       
     </div>
   );
