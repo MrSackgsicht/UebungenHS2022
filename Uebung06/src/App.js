@@ -3,7 +3,6 @@ import "./App.css";
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Circle, Popup, useMap } from 'react-leaflet'
 
-
 function App() {
 
   React.useEffect(() => {
@@ -20,22 +19,18 @@ function App() {
 
 return (
   <MapContainer center={[47.36811, 7.97150]} zoom={15} scrollWheelZoom={true}>
-  <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-  />
+    />
 
-  <Marker position={[47.36811, 7.97150]}>
-    <Popup>
-      AKW<br/>Gösgen
-    </Popup>
-  </Marker>
+    <Marker position={[47.36811, 7.97150]}>
+      <Popup>
+        AKW<br/>Gösgen
+      </Popup>
+    </Marker>
 
-  <Circle center={[47.36811, 7.97150]} radius={[50000]}>
-    
-  </Circle>
-  
-
-</MapContainer>
+    <Circle center={[47.36811, 7.97150]} radius={[50000]}></Circle>
+  </MapContainer>
   );
 }
 
